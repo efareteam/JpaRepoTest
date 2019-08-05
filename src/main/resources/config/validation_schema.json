@@ -1,0 +1,205 @@
+{
+	"$schema": "testify_schema",
+	"title": "testify",
+	"description": "testify schema",
+	"type": "object",
+	"properties": {
+		"employee": {
+			"properties": {
+				"employeeType": {
+					"type": "string",
+					"not": {
+						"type": "null"
+					},
+					"pattern": "[a-zA-Z]{2}",
+					"maxLength": 30
+				},
+				"clientId": {
+					"type": "integer",
+					"minimum": 1,
+					"maximum": 150
+				},
+				"person": {
+					"properties": {
+						"title": {
+							"type": "string",
+							"not": {
+								"type": "null"
+							},
+							"pattern": "[a-zA-Z.]{2}",
+							"maxLength": 30
+						},
+						"phoneNo": {
+							"type": "string",
+							"not": {
+								"type": "null"
+							},
+							"pattern": "[0-9]{10}",
+							"maxLength": 18
+						},
+						"lastName": {
+							"type": "string",
+							"not": {
+								"type": "null"
+							},
+							"pattern": "[a-zA-Z]{2}",
+							"maxLength": 30
+						},
+						"firstName": {
+							"type": "string",
+							"not": {
+								"type": "null"
+							},
+							"pattern": "[a-zA-Z]{2}",
+							"maxLength": 30
+						},
+						"clientId": {
+							"type": "integer",
+							"minimum": 1,
+							"maximum": 150
+						},
+						"emailId": {
+							"type": "string",
+							"not": {
+								"type": "null"
+							},
+							"pattern": "^[A-Za-z0-9+_.-]+@(.+)$"
+						},
+						"personType": {
+							"type": "string",
+							"not": {
+								"type": "null"
+							},
+							"pattern": "[a-zA-Z]{2}",
+							"maxLength": 30
+						}
+					},
+					"required": [
+						"firstName",
+						"lastName",
+						"title",
+						"emailId",
+						"phoneNo"
+					]
+				}
+			},
+			"required": [
+				"employeeType",
+				"clientId"
+			]
+		},
+		"htmlelement": {
+			"properties": {
+				"htmlElementId": {
+					"type": "integer",
+					"minimum": 1,
+					"maximum": 150
+				},
+				"productId": {
+					"type": "integer",
+					"minimum": 1,
+					"maximum": 150
+				},
+				"htmlElementName": {
+					"type": "string",
+					"not": {
+						"type": "null"
+					},
+					"pattern": "[a-zA-Z]{2}",
+					"maxLength": 30
+				},
+				"elementType": {
+					"type": "string",
+					"not": {
+						"type": "null"
+					},
+					"pattern": "[a-zA-Z]{2}",
+					"maxLength": 30
+				},
+				"elementClass": {
+					"type": "string",
+					"not": {
+						"type": "null"
+					},
+					"pattern": "[a-zA-Z]{2}",
+					"maxLength": 30
+				},
+				"moduleName": {
+					"type": "string",
+					"not": {
+						"type": "null"
+					},
+					"pattern": "[a-zA-Z]{2}",
+					"maxLength": 30
+				},
+				"pageName": {
+					"type": "string",
+					"not": {
+						"type": "null"
+					},
+					"pattern": "[a-zA-Z]{2}",
+					"maxLength": 30
+				},
+				"elementId": {
+					"type": "string",
+					"not": {
+						"type": "null"
+					},
+					"pattern": "[a-zA-Z]{2}",
+					"maxLength": 30
+				},
+				"elementCss": {
+					"type": "string",
+					"not": {
+						"type": "null"
+					},
+					"pattern": "[a-zA-Z]{2}",
+					"maxLength": 30
+				},
+				"elementXpath": {
+					"type": "string",
+					"not": {
+						"type": "null"
+					},
+					"pattern": "[a-zA-Z]{2}",
+					"maxLength": 30
+				},
+				"recommenedPath": {
+					"type": "string",
+					"not": {
+						"type": "null"
+					},
+					"pattern": "[a-zA-Z]{2}",
+					"maxLength": 30
+				},
+				"clients": {
+					"type": "string",
+					"not": {
+						"type": "null"
+					},
+					"pattern": "[a-zA-Z]{2}",
+					"maxLength": 30
+				},
+				"waitTime": {
+					"type": "integer",
+					"minimum": 1,
+					"maximum": 150
+				}
+			},
+			"required": [
+				"htmlElementId",
+				"htmlElementName",
+				"elementType",
+				"elementClass",
+				"moduleName",
+				"pageName",
+				"elementId",
+				"elementCss",
+				"elementXpath",
+				"recommenedPath",
+				"clients",
+				"waitTime"
+			]
+		}
+	}
+}
